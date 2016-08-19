@@ -1,0 +1,386 @@
+
+
+@media screen {
+
+* { margin: 0; padding: 0; }
+body { background: url(http://suakholanh.github.io/bg_body.png) repeat; font: 12px Arial, Serif; }
+.screen-reader-text { position: absolute; left: -9999px; top: -9999px; }
+.clear { clear: both; }
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .group, *:first-child+html .group { zoom: 1; } /* First selector = IE6, Second Selector = IE 7 */
+
+.page-wrap { width: 960px; margin: 0px auto; }
+
+h1, h2, h3 { font-weight: normal; margin: 0 0 10px 0; }
+h1 { }
+h2 { }
+h3 { }
+
+p { margin: 0 0 10px 0; }
+a {text-decoration: none;color: #EF7D37;}
+a:hover { } 
+
+blockquote { }
+blockquote p { }
+
+ul, ol { margin: 0 0 10px 0; }
+
+.post { }
+
+.entry {padding: 15px;color: #555555}
+.entry a { }
+.entry a:hover { }
+.entry img {max-width:660px;}
+.entry ul {list-style: disc;margin-left: 20px;}
+pre { }
+code, tt { }
+
+#meta { }
+.postmetadata { }
+
+#sidebar { }
+
+.navgation { }
+   .next-posts { }
+   .prev-posts { }
+#searchdiv {padding: 15px;}
+#searchform { 
+    background: url(http://suakholanh.github.io/bg_search.png) no-repeat scroll 0 0 transparent;
+    height: 30px;
+  
+    width: 220px;}
+	#s {background:transparent;
+    border: medium none;
+    margin: 7px 0;
+    width: 170px;margin-left: 10px;}
+	#searchsubmit {background:transparent;
+    border: medium none;
+    cursor: pointer;
+    margin-left: 0;
+    width: 20px;}
+	
+ol.commentlist { list-style: none; }
+ol.commentlist li { }
+ol.commentlist li.alt { }
+ol.commentlist li.bypostauthor { }
+ol.commentlist li.byuser { }
+ol.commentlist li.comment-author-admin { }
+ol.commentlist li.comment { border-bottom: 1px dotted #666; padding: 10px; }
+ol.commentlist li.comment div.comment-author { }
+ol.commentlist li.comment div.vcard { }
+ol.commentlist li.comment div.vcard cite.fn { font-style: normal; }
+ol.commentlist li.comment div.vcard cite.fn a.url { }
+ol.commentlist li.comment div.vcard img.avatar { float:right; margin: 0 0 10px 10px; }
+ol.commentlist li.comment div.vcard img.avatar-32 { }
+ol.commentlist li.comment div.vcard img.photo { }
+ol.commentlist li.comment div.vcard span.says { }
+ol.commentlist li.comment div.commentmetadata { }
+ol.commentlist li.comment div.comment-meta { font-size: 10px; }
+ol.commentlist li.comment div.comment-meta a { color: #ccc; }
+ol.commentlist li.comment p { }
+ol.commentlist li.comment ul { }
+ol.commentlist li.comment div.reply { font-size: 11px; }
+ol.commentlist li.comment div.reply a { font-weight: bold; }
+ol.commentlist li.comment ul.children { list-style: none; margin: 10px 0 0; }
+ol.commentlist li.comment ul.children li { }
+ol.commentlist li.comment ul.children li.alt { }
+ol.commentlist li.comment ul.children li.bypostauthor { }
+ol.commentlist li.comment ul.children li.byuser { }
+ol.commentlist li.comment ul.children li.comment { }
+ol.commentlist li.comment ul.children li.comment-author-admin { }
+ol.commentlist li.comment ul.children li.depth-2 { border-left: 5px solid #555; margin: 0 0 10px 10px; }
+ol.commentlist li.comment ul.children li.depth-3 { border-left: 5px solid #999; margin: 0 0 10px 10px; }
+ol.commentlist li.comment ul.children li.depth-4 { border-left: 5px solid #bbb; margin: 0 0 10px 10px; }
+ol.commentlist li.comment ul.children li.depth-5 { }
+ol.commentlist li.comment ul.children li.odd { }
+ol.commentlist li.even { background: #fff; }
+ol.commentlist li.odd { background: #f6f6f6; }
+ol.commentlist li.parent { border-left: 5px solid #111; }
+ol.commentlist li.thread-alt { }
+ol.commentlist li.thread-even { }
+ol.commentlist li.thread-odd { }
+
+form { }
+input[type=text] { }
+textarea { }
+
+} /* END screen media */
+
+@media print {
+
+.do-not-print { display: none; }
+#comments { page-break-before: always; }
+
+body { width: 100% !important; margin: 0 !important; padding: 0 !important; line-height: 1.4; word-spacing: 1.1pt; letter-spacing: 0.2pt; font-family: Garamond,"Times New Roman", serif; color: #000; background: none; font-size: 12pt; }
+h1,h2,h3,h4,h5,h6 { font-family: Helvetica, Arial, sans-serif; }
+h1 { font-size: 19pt; }
+h2 { font-size:17pt; }
+h3 { font-size:15pt; }
+h4,h5,h6 { font-size:12pt; }
+code { font: 10pt Courier, monospace; } 
+blockquote { margin: 1.3em; padding: 1em; }
+img { display: block; margin: 1em 0; }
+a img { border: none; }
+table { margin: 1px; text-align:left; }
+th { border-bottom: 1px solid #333;  font-weight: bold; }
+td { border-bottom: 1px solid #333; }
+th, td { padding: 4px 10px 4px 0; }
+caption { background: #fff; margin-bottom: 2em; text-align: left; }
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; } 
+a { text-decoration: none; color: black; }
+	
+} /* END print media */
+
+/**/
+#header {line-height: 85px;position: relative;}
+.site_header {background: #fff;height: 85px;position: relative;z-index: 10}
+.shadow_line {background: url(http://suakholanh.github.io/shadow.png) repeat-x left top;height: 5px;position: relative;z-index: 2;width: 100%;}
+#logo {display: block;float: left}
+.site_navigation {float: left;position: absolute;right: 0px;top:30px;}
+.site_navigation ul li {display: inline-block;}
+
+.site_navigation ul li a {color: #666666;text-transform: uppercase;padding: 0 20px;height: 30px;margin: 0 5px;}
+
+.sf-menu ul {position:absolute;top:-999em;width:20em;}
+.sf-menu ul li {width:100%;}
+.sf-menu li:hover {visibility:inherit;}
+.sf-menu li {float:left;position:relative;}
+.sf-menu a {display:block;position:relative;}
+.sf-menu li:hover ul,.sf-menu li.sfHover ul {left:0;top:2.5em;z-index:9999;}
+
+/*** DEMO SKIN ***/
+.sf-menu { height: 30px;
+    margin-bottom: 0;
+    line-height: 30px;}
+.sf-menu ul {background: #EF7D37;z-index: 9999;margin-top: -2px;margin-left: 5px;}
+.sf-menu ul li a {color: #fff}
+
+.sf-menu a {display: block;font-size: 12px;font-family: Arial}
+.sf-menu .current-menu-item > a, .sf-menu a:hover, li.sfHover a {background-color: #ef7d37;color: #fff;border-radius: 3px;}
+.sf-menu li {}
+.sf-menu li li {}
+.sf-menu li li li {}
+
+/**/
+.site_slide {background: url(http://suakholanh.github.io/bg_slide.png) no-repeat center top;height: 400px;width: 100%;position: relative;z-index: 1;margin-top: -5px;}
+.slides {background: url(http://suakholanh.github.io/bg_slides.png) no-repeat left top;height: 400px;
+    width: 978px;position: relative;}
+.bx-wrap {    left: 13px;
+    position: absolute;
+    top: 25px;width: 950px;height: 340px;}
+.about-us {position: absolute;    right: -10px;
+    top: 60px;}
+/**/
+.site-service {margin-top: 30px;}
+.service {float: left;padding-right: 60px;width: 280px;font-family:'Open Sans',sans-serif;background: url(http://suakholanh.github.io/line.png) no-repeat right top;}
+.service h2 {font-weight: bold;font-size: 16px;font-family:'Open Sans';line-height: 32px;}
+.service h2 span {background: url(http://suakholanh.github.io/services_icon.png) no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 32px;
+    margin-right: 10px;
+    width: 37px;}
+.service h2 a {color:#333333;}
+.service h2 a:hover {color:#F35D01}
+.service h2 span.profession {background-position: 0 -35px;}
+.service h2 span.exaclly {background-position: -35px -35px;}
+.service h2 span.price {background-position: -74px -32px;}
+.service h2 a:hover span.profession {background-position: 0 -2px;}
+.service h2 a:hover span.exaclly {background-position: -35px -2px;}
+.service h2 a:hover span.price  {background-position: -74px 1px;}
+.service:last-child {padding-right: 0;background: none;}
+.service ul {list-style: disc;margin-left: 15px;}
+/**/
+.site-content-index {font-family:'Open Sans',sans-serif;padding: 10px 0;color: #333;line-height: 1.8}
+.site-content-index h1 {font-size: 22px;text-transform: uppercase;font-size: }
+.site-content-index p {font-size: 13px;}
+
+.site-content {background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #999999;
+    float: right;
+    margin-top: 30px;
+    width: 690px;line-height: 1.8}
+
+.block_title {background-color: #f9f9f9;border-bottom: 1px solid #c9cdd0;height: 45px;line-height: 45px;color: #333333;font-size: 16px;border-radius: 5px 5px 0 0;padding-left: 15px;margin-bottom: 0px;}
+.article_post {margin: 15px 15px 0 15px;padding-bottom: 15px;border-bottom: 1px dotted #999999;height: 175px;width: 315px;float: left;}
+.article_post h1 a {font-size: 13px;font-weight: bold;color: #444;}
+.article_post .img-box {width: 150px;height: 100px;}
+.article_post p.body_entry {color:#666666}
+
+.library_list {float: left;margin: 30px 30px 0 30px; position: relative;width: 300px;height: 195px;}
+.library_list:nth-child(2n) {margin-left: 0px;}
+
+.library_list h1 {position: absolute;background-color: #ea7d14;bottom: 0px;width: 97%;display: block;margin-bottom: 0px;padding: 5px;}
+.library_list h1 a {color: #fff;text-transform: capitalize;font-size: 13px;font-weight: bold;}
+
+.library {padding-bottom: 30px;}
+/**/
+.widget-area {float: left;width: 250px;margin-top: 30px;}
+.widget {background: none repeat scroll 0 0 #FFFFFF; box-shadow: 0 0 3px #999999; border-radius: 5px;margin-bottom: 20px;padding-bottom: 20px;}
+.widget ul {margin:0  15px;list-style:none}
+.widget ul li {padding: 10px 0 10px 10px; background: url(http://suakholanh.github.io/arrow_newss.png) no-repeat scroll left 14px transparent;}
+.widget ul li:hover {background: url(http://suakholanh.github.io/arrow_news_hover.png) no-repeat scroll left 14px transparent}
+.widget ul li + li{border-top: 1px dotted #999;}
+.widget ul li a
+{color: #666655;}
+.widget ul li a:hover {;color: #EF7D37}
+.widget_search h2 {background-color: #eeeeee;text-transform: uppercase;padding: 10px 15px;margin-bottom: 0px;}
+.widget_search li {background: none !important;
+   
+    padding-left: 0 !important;}
+.widget_search ul li + li{border: none;}
+/**/
+#colophon {margin-top: 30px;line-height: 1.8;}
+#colophon ul {list-style:none;}
+.footer_bottom h1, .footer_bottom h2 {float: left;font-size: 12px;}
+#colophon p {color: #fff;}
+.footer_top {background: #fff;background-color: #fa8b47;}
+.footer_bottom {color: #666;text-transform: uppercase;font-size: 12px;padding: 15px 0;}
+.footer_bottom a {color: #666}
+.social {float: right}
+.social li {display: inline-block;}
+.social li a {background: url(http://suakholanh.github.io/social_icon.png) no-repeat;width: 25px;height: 25px;display: block;text-indent: -9999px;}
+.social li.facebook a {background-position: 0 0}
+.social li.twister a {background-position: -25px 0}
+.social li.google a {background-position: -50px 0}
+.social li.youtube a {background-position: -75px 0}
+.social li.facebook a:hover {background-position: 0 -25px}
+.social li.twister a:hover {background-position: -25px -25px}
+.social li.google a:hover {background-position: -50px -25px}
+.social li.youtube a:hover {background-position: -75px -25px}
+/**/
+.more_link {
+    background-image: linear-gradient(top, rgb(239,126,55) 44%, rgb(237,91,0) 100%);
+    background-image: -o-linear-gradient(top, rgb(239,126,55) 44%, rgb(237,91,0) 100%);
+    background-image: -moz-linear-gradient(top, rgb(239,126,55) 44%, rgb(237,91,0) 100%);
+    background-image: -webkit-linear-gradient(top, rgb(239,126,55) 44%, rgb(237,91,0) 100%);
+    background-image: -ms-linear-gradient(top, rgb(239,126,55) 44%, rgb(237,91,0) 100%);
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.44, rgb(239,126,55)),
+        color-stop(1, rgb(237,91,0))
+    );
+	border: 1px solid #C65916;
+    border-radius: 20px 20px 20px 20px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 2px 0 2px 15px;
+    text-transform: uppercase; 
+    width: 101px;height: 27px;}
+.more_link span {background: url(http://suakholanh.github.io/arrow.png) no-repeat left 8px;float: left;padding-left: 20px;}
+.more_link:hover {background-color: #666;}
+.footer_top_inner {padding: 30px 0}
+.footer_new {width: 590px;float: left;color: #666666;padding:20px 0 20px 20px;display:block;}
+.footer_new h2, .footer_new h3, .article_post h1 {margin-bottom: 0px;}
+.footer_new h2 a {color: #fff;font-size: 18px;font-family: Arial}
+.footer_new h2 a:hover {text-decoration:underline;}
+.support_social a.support_icon:hover, .article_post h1 a:hover {color: #EF7D37}
+.support_social {float: right;padding: 20px;background-color: #ef7d37;min-height:100px;}
+.footer_new .list_news {margin-top: 20px;}
+.footer_new .list_news h3 a:hover {text-decoration: underline;}
+.footer_new .list_news h3 a {background: url(http://suakholanh.github.io/arrow_news.png) no-repeat scroll left 4px transparent;
+    color: #fff;
+    padding-left: 10px;}
+.support {background: url(http://suakholanh.github.io/hot_line.png) no-repeat;width: 300px;height: 100px;}
+.footer_new .list_news h3 a:hover {}
+.support span {display: block; margin-left: 100px;}
+.support span.hot_line {color: #fff;font-weight: bold;font-size: 24px;padding-top: 25px;}
+.support span.mail {color:#2d8eec;font-size: 11px;}
+.support_social a.support_icon { background: url(http://suakholanh.github.io/support_icon.png) no-repeat scroll 0 0 transparent;
+    color: #555555;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 10px;
+    padding-left: 60px;
+    width: 90px;}
+.support_social a.yahoo {background-position: 0 -60px;}
+.img-box {float: left;display: block;margin-right: 15px;border: 1px solid #fff;padding: 3px;background-color: #fff;}
+
+/**/
+#qtranslate-chooser { height: 25px;
+    margin-bottom: 0;
+    position: absolute;
+    right: 25px;
+    top: 10px;}
+#qtranslate-chooser li {display: inline-block;}
+
+#qtranslate-chooser li a {display: block;
+    height: 20px;
+    margin-left: 5px;
+    text-indent: -9999px;
+    width: 20px;}
+#qtranslate-chooser li.lang-vi a {background: url(http://demo21.pbs.vn/khoa/chuyennha/wp-content/plugins/qtranslate/flags/vn.png) no-repeat;}
+#qtranslate-chooser li.lang-en a {background: url(http://demo21.pbs.vn/khoa/chuyennha/wp-content/plugins/qtranslate/flags/gb.png) no-repeat;}
+#qtranslate-chooser li.lang-ko a {background: url(http://demo21.pbs.vn/khoa/chuyennha/wp-content/plugins/qtranslate/flags/kr.png) no-repeat;}
+
+.sf-menu ul ul { margin-left: 240px;margin-top: -30px;}
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 2.625em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 2.625em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/**/
+.support-list {color: #fff;font-family: Verdana;font-size: 11px;font-weight: bold;}
+.yahoo {display: block;
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 5px;
+    margin-top: 2px;}
+#product-category {margin-top: 40px;}
+#product-category ul {list-style:none;}
+#product-category li {float: left;width: 296px;margin-right: 20px;padding: 5px;background-color: #fff;box-shadow: 1px 1px 1px #ccc;
+-moz-box-shadow: 0 1px 2px #999999;-webkit-box-shadow: 0 1px 2px #999999;}
+#product-category li .img-box {border: medium none;
+    float: none;
+    margin: 0;
+    padding: 0;}
+#product-category li:last-child {margin-right: 0px;}
+.title-cat {margin:10px;color: #000;font-family: Arial;font-size: 15px;font-weight: bold;text-align: center;}
+
+.bx-wrapper .bx-pager {
+   
+    
+    padding-top: 15px;
+    text-align: center;
+}
+.bx-pager-item {display: inline-block;margin: 0 5px;}
+.bx-pager-item a {background: url(http://suakholanh.github.io/temp.png) no-repeat -15px 0px; display: block;height: 10px;
+    text-indent: -9999px;
+    width: 10px;}
+.bx-pager-item a:hover {background-position: 0 0;}
+.last {padding-right:0px !important;background:none;}
+.last-cat {margin-right:0px !important;}
+
+.errors {font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;}
+.errors span a {color: #ef7d37;}
+.error {text-align: center;}
+
+/**/
+.like-us {position: fixed;left:0px;top:200px;z-index: 100}
+.like-us .google, .like-us .face  {background-color: rgba(0, 0, 0, 0.2);line-height: 0;padding: 10px;border-radius: 5px;}
+.like-us .face {margin-top: 10px;}
